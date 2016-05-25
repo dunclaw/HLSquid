@@ -1,0 +1,127 @@
+-		Modules	{PartModuleList}	PartModuleList
+		Count	10	System.Int32
+-		Non-Public members		
+-		modules	Count=10	System.Collections.Generic.List`1[[PartModule, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+-		[0]	"SQUIDED-roverWheel2 (ModuleWheelBase)"	PartModule
++		base	"SQUIDED-roverWheel2 (ModuleWheelBase)"	PartModule
+		ApplyForcesToParent	false	System.Boolean
+		FitWheelColliderToMesh	false	System.Boolean
++		InopSystems	{ModuleWheels.WheelSubsystems}	ModuleWheels.WheelSubsystems
+		IsClipping	false	System.Boolean
+		ShouldBeClipping	false	System.Boolean
+		TooltipPrimaryField	"Motorized"	System.String
+		TooltipTitle	"Rover Wheel"	System.String
+-		Wheel	"SQUIDED-roverWheel2 (KSPWheelController)"	KSPWheelController
++		base	"SQUIDED-roverWheel2 (KSPWheelController)"	VPVehicleBase
+		IsGrounded	true	System.Boolean
++		OnShouldIgnoreForces	{System.Func`2[[VPVehicleBase+WheelState, Assembly-CSharp-firstpass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]}	System.Func`2[[VPVehicleBase+WheelState, Assembly-CSharp-firstpass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
++		RbTgt	"SQUIDED-roverWheel2 (UnityEngine.Rigidbody)"	UnityEngine.Rigidbody
++		SuspensionAxis	"(-0.8, 0.0, 0.6)"	UnityEngine.Vector3
+		TrueWheelLoad	-1.30739284f	System.Single
++		WheelBase	"(-1.5, 0.9, -0.5)"	UnityEngine.Vector3
++		WheelCenter	"(-1.6, 0.9, -0.4)"	UnityEngine.Vector3
++		WheelDown	"(0.8, 0.0, -0.6)"	UnityEngine.Vector3
+		WheelRadius	0.157f	System.Single
+		brakeInput	0f	System.Single
+		brakeResponse	100f	System.Single
+		brakeState	0f	System.Single
+		driveInput	0f	System.Single
+		driveResponse	2f	System.Single
+		driveState	0f	System.Single
+		keyboardBrakes	false	System.Boolean
+		keyboardDrive	false	System.Boolean
+		keyboardSteering	false	System.Boolean
+		maxBrakeTorque	0.34f	System.Single
+		maxDriveTorque	0.1697408f	System.Single
+		maxRpm	60823.543f	System.Single
+		maxSteerAngle	30f	System.Single
++		rb	"SQUIDED-roverWheel2 (UnityEngine.Rigidbody)"	UnityEngine.Rigidbody
+		steerInput	0f	System.Single
+		steerState	0f	System.Single
+		steeringResponse	1.5f	System.Single
++		tgtRb	"SQUIDED-roverWheel2 (UnityEngine.Rigidbody)"	UnityEngine.Rigidbody
++		tireFriction	{VPTireFriction}	VPTireFriction
++		wcTransform	"WheelCollider (UnityEngine.Transform)"	UnityEngine.Transform
++		wheelCollider	"WheelCollider (VPWheelCollider)"	VPWheelCollider
+		wheelDamping	0.95f	System.Single
+-		wheelState	{VPVehicleBase+WheelState}	VPVehicleBase+WheelState
+		angularVelocity	0.566183031f	System.Single
+		brakeTorque	0f	System.Single
+		contactDepth	0.0396108f	System.Single
+		downForce	1f	System.Single
+		driveTorque	0f	System.Single
+		externalDownForce	0f	System.Single
++		externalSuspensionForce	"(0.0, 0.0, 0.0)"	UnityEngine.Vector3
++		externalTireForce	"(0.0, -0.2)"	UnityEngine.Vector2
+		externalUpForce	0f	System.Single
+		externalUpForceFactor	0f	System.Single
+		grounded	true	System.Boolean
++		hit	{UnityEngine.WheelHit}	UnityEngine.WheelHit
++		lastSuspensionForce	"(0.0, 0.0, 0.0)"	UnityEngine.Vector3
++		lastTireForce	"(0.0, 0.0)"	UnityEngine.Vector2
++		localSurfaceForce	"(0.0, 0.0)"	UnityEngine.Vector2
++		localWheelVelocity	"(0.0, 0.1)"	UnityEngine.Vector2
+		reactionTorque	4.723023E-05f	System.Single
+		steerAngle	0f	System.Single
++		surfaceForce	"(0.0, 0.0, 0.0)"	UnityEngine.Vector3
+		suspensionCompression	0.203132316f	System.Single
+		suspensionDisplacement	-0.5968677f	System.Single
++		tireForce	"(0.0, 0.0)"	UnityEngine.Vector2
+		trueWheelLoad	-1.30739284f	System.Single
++		wheelCol	"WheelCollider (VPWheelCollider)"	VPWheelCollider
++		wheelVelocity	"(-0.1, 0.0, -0.1)"	UnityEngine.Vector3
++		Non-Public members		
++		WheelOrgPosR	"(-0.1, 0.0, 0.0)"	UnityEngine.Vector3
++		WheelOrgRotR	"(0.0, 0.0, 0.0, 1.0)"	UnityEngine.Quaternion
+		activeSubsteps	8	System.Int32
+		adherentStart	0.5f	System.Single
+		autoFriction	true	System.Boolean
+		autoFrictionAvailable	true	System.Boolean
+		autoStrut	true	System.Boolean
+		autoStrutExcludeParent	false	System.Boolean
+		blockedState	"No"	System.String
++		center	"(0.0, 0.0, 0.0)"	UnityEngine.Vector3
+		clipObject	""	System.String
+		debugClipSpheres	false	System.Boolean
+		forceSharpness	10f	System.Single
+		frictionAdherent	0.25f	System.Single
+		frictionLimit	1.1f	System.Single
+		frictionMultiplier	1f	System.Single
+		frictionPeak	1.45f	System.Single
+		frictionSharpness	0f	System.Single
+		geeBias	1.2f	System.Single
+		groundHeightOffset	0f	System.Single
+		inactiveSubsteps	4	System.Int32
+		isGrounded	true	System.Boolean
+		limitStart	7f	System.Single
+		mass	0.04f	System.Single
+		peakStart	4f	System.Single
+		radius	0.157f	System.Single
++		slipDisplacement	"(0.0, 0.0)"	UnityEngine.Vector2
++		strutOffset	"(0.0, 0.0, 0.0)"	UnityEngine.Vector3
+		suspensionEnabled	true	System.Boolean
++		wheelColliderHost	"WheelCollider (UnityEngine.Transform)"	UnityEngine.Transform
+		wheelColliderTransformName	"WheelCollider"	System.String
+		wheelDamping	0.05f	System.Single
+		wheelMaxSpeed	1000f	System.Single
++		wheelTransform	"WheelPivot (UnityEngine.Transform)"	UnityEngine.Transform
+		wheelTransformName	"WheelPivot"	System.String
+		wheelType	MOTORIZED	WheelType
++		Non-Public members		
+
+
+
+
+
+
+
+part.Modules.GetModule(0) as ModuleWheelBase
+
+WheelBase
+WheelCenter
+WheelDown
+IsGrounded
+SuspensionAxis
+wheelCollider
+
+RbTgt
